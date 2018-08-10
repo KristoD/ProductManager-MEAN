@@ -1,0 +1,12 @@
+<h1>Edit Product</h1>
+
+<form (submit)="onSubmit()">
+  <label>Title</label>
+  <input type="text" name="product.title" [(ngModel)]="product.title">
+  <label>Price</label>
+  <input type="text" name="product.price" [(ngModel)]="product.price">
+  <label>Image URL</label>
+  <input type="text" name="product.imageURL" [(ngModel)]="product.imageURL">
+  <input type="submit" value="Update">
+  <button (click)="onClickDelete(product._id)">Delete</button>
+</form>
